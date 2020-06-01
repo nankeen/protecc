@@ -1,5 +1,11 @@
 # Protecc - REST Write Blocker
 
+![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/nankeen/sauvignon)
+![GitHub](https://img.shields.io/github/license/nankeen/sauvignon)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/nankeen/sauvignon)
+
 ---
 
 Protecc is a HTTP reverse proxy that blocks data modifying REST methods like `PUT`, `POST`, and `DELETE`.
