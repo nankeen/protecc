@@ -11,7 +11,8 @@ func NewTransparentHttpProxy(proxyTargetHost string) *TransparentHttpProxy {
 	return &TransparentHttpProxy{ProxyTargetHost: proxyTargetHost}
 }
 
-func (tp *TransparentHttpProxy) HttpHandler(w http.ResponseWriter, r *http.Request) {
+// This type implements http.Handler
+func (tp *TransparentHttpProxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	director := func(target *http.Request) {
 		target.URL.Scheme = "http"
 		target.URL.Path = r.URL.Path
